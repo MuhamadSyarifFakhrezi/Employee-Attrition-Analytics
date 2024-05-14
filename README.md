@@ -35,6 +35,7 @@ pip install pandas numpy matplotlib seaborn jupyter category_encoders scikit-lea
 ```
 streamlit run app.py
 ```
+Link Streamlit App Prediction: [attrition-predictor](https://attrition-predictor.streamlit.app/)
 
 ## Business Dashboard
 
