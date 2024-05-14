@@ -27,7 +27,7 @@ Sumber data: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicodi
 Setup environment:
 
 ```
-pip install pandas numpy matplotlib seaborn jupyter category_encoders scikit-learn pickle streamlit
+pip install pandas numpy matplotlib seaborn jupyter category_encoders scikit-learn streamlit
 ```
 
 ### Run Streamlit App
@@ -56,10 +56,13 @@ Link dashboard yang dapat diakses: [Tableau Dashboard](https://public.tableau.co
 
 Berdasarkan analisis korelasi heatmap, visualisasi, dan machine learning feature yang paling berpengaruh secara signifikan baik secara positif maupun negatif terhadap attrition karyawan adalah Age, Monthly Income, OverTime, dan Total Working Years.
 
+Karyawan yang mengalami Over Time, karyawan yang berumur muda(18-26 tahun), yang memiliki pendapatan perbulan cenderung rendah(1k-4k), dan total tahun kerja yang relatif rendah(kurang dari 3 tahunn) merupakan karakteristik karyawan yang lebih berpotensi untuk keluar dari pekerjaannya.
+
+Selain itu karakteristik tambahan yang juga dapat mempengaruhi kemungkinan karyawan untuk resign antara lain: karyawan yang belum menikah, karyawan dengan peran/posisi sebagai Sales Representative, dan karyawan yang memiliki level pekerjaan yang rendah.
+
 ### Rekomendasi Action Items (Optional)
 
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-
+Beberapa rekomendasi aksi yang dapat dilakukan untuk memperbaiki tingkat attrition karyawan saat ini antara lain:  
 - Perusahaan mungkin dapat memberikan jalan karir yang jelas kepada karyawan muda agar mereka merasa terdorong untuk tetap bertahan di perusahaan. Ini bisa meliputi program pengembangan, pelatihan, atau mentorship yang ditujukan khusus untuk mereka.
 - Perusahaan dapat memantau dan mengatur jam kerja karyawan secara bijak agar tidak terjadi beban kerja yang berlebihan dan berpotensi menimbulkan atrisi.
 - Tinjau kembali kebijakan kompensasi perusahaan untuk memastikan bahwa gaji yang ditawarkan kompetitif dan sesuai dengan kontribusi yang karyawan berikan.
