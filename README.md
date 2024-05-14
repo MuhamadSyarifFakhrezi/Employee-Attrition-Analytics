@@ -25,10 +25,11 @@ Kita juga membuat web app pada streamlit yang dapat digunakan untuk memprediksi 
 Sumber data: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
-
-```
-pip install pandas numpy matplotlib seaborn jupyter category_encoders scikit-learn streamlit
-```
+1. Buka file notebook.ipynb pada Google Colaboratory
+2. Jalankan kode berikut
+   ```
+   !pip install -r requirements.txt
+   ```
 
 ### Run Streamlit App
 
