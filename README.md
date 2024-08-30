@@ -1,5 +1,3 @@
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
-
 ## Business Understanding
 
 Jaya Jaya Maju merupakan salah satu perusahaan multinasional yang telah berdiri sejak tahun 2000. Ia memiliki lebih dari 1000 karyawan yang tersebar di seluruh penjuru negeri. 
@@ -61,7 +59,7 @@ Karyawan yang mengalami Over Time, karyawan yang berumur muda(18-26 tahun), yang
 
 Selain itu karakteristik tambahan yang juga dapat mempengaruhi kemungkinan karyawan untuk resign antara lain: karyawan yang belum menikah, karyawan dengan peran/posisi sebagai Sales Representative, dan karyawan yang memiliki level pekerjaan yang rendah.
 
-### Rekomendasi Action Items (Optional)
+### Recomendation Action Items
 
 Beberapa rekomendasi aksi yang dapat dilakukan untuk memperbaiki tingkat attrition karyawan saat ini antara lain:  
 - Perusahaan mungkin dapat memberikan jalan karir yang jelas kepada karyawan muda agar mereka merasa terdorong untuk tetap bertahan di perusahaan. Ini bisa meliputi program pengembangan, pelatihan, atau mentorship yang ditujukan khusus untuk mereka.
