@@ -21,7 +21,7 @@ Kita juga membuat web app pada streamlit yang dapat digunakan untuk memprediksi 
 Sumber data: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
-1. Buka file [notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/edit/main/notebook.ipnyb) pada Google Colaboratory
+1. Buka file [notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/blob/main/notebook.ipynb) pada Google Colaboratory
 2. Jalankan kode berikut
    ```
    !pip install -r requirements.txt
