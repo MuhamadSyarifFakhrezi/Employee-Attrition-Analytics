@@ -23,7 +23,7 @@ Kita juga membuat web app pada streamlit yang dapat digunakan untuk memprediksi 
 Sumber data: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
-1. Buka file notebook.ipynb pada Google Colaboratory
+1. Buka file [notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/edit/main/notebook.ipnyb) pada Google Colaboratory
 2. Jalankan kode berikut
    ```
    !pip install -r requirements.txt
@@ -37,6 +37,8 @@ streamlit run app.py
 Link Streamlit App Prediction: [attrition-predictor](https://attrition-predictor.streamlit.app/)
 
 ## Business Dashboard
+![muhamadsyarif-dashboard](https://github.com/user-attachments/assets/5bd2970b-e67c-463f-a77d-f4ab5865be53)
+![muhamadsyarif-dashboard2](https://github.com/user-attachments/assets/ac206197-4f78-4419-9b0b-b8f7c80bf769)
 
 Berdasarkan dashboard yang telah dibuat, berikut ini adalah beberapa insight yang diperoleh:
 - Karyawan yang berumur 18-26 tahun memiliki presentase tingkat attrition yang lebih tinggi.
