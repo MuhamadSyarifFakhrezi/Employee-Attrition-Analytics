@@ -1,28 +1,27 @@
 ## Business Understanding
 
-Walaupun telah menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih cukup kesulitan dalam mengelola karyawan. Hal ini berimbas tingginya attrition rate (rasio jumlah karyawan yang keluar dengan total karyawan keseluruhan) hingga lebih dari 10%.
+Despite being a fairly large company, Jaya Jaya Maju still has difficulties in managing employees. This resulted in a high attrition rate (the ratio of the number of employees who left to the total number of employees) of more than 10%.
 
-### Permasalahan Bisnis
+### Business Problem
 
-Untuk mencegah hal ini semakin parah, manajer departemen HR ingin meminta bantuan untuk mengidentifikasi berbagai faktor yang mempengaruhi tingginya attrition rate tersebut. Selain itu, ia juga meminta untuk membuat business dashboard untuk membantunya memonitori berbagai faktor tersebut.
+In order to prevent this from getting worse, the HR department manager would like help to identify various factors that affect the high attrition rate. In adittion, he also requested to create business dashboard to help him in monitoring the various factors.
 
-### Cakupan Proyek
+### Project scoope
+To answer the business problem, in this project we use two method, correlation analysis and machine learning. Machine learning algorithm that we used is Random Forest Classifier, with the model created we apply the function 'feature importances' to find out what features are most affected by attrition.
 
-Untuk menjawab permasalahan bisnis tersebut, pada proyek ini kita menerapkan dua metode yaitu analisis korelasi dan machine learning. Algoritma machine learning yang digunakan adalah Random Forest Classifier, dengan model yang dibuat kita terapkan function 'feature importaces' untuk mengetahui feature apa saja yang paling berpengaruh terhadap attrition.
+We will also conduct an EDA (Exploratory Data Analysis) process to obtain data distribution and overview of the dataset.
 
-Kita juga akan melakukan sedikit proses Exploratory Data Analysis (EDA) untuk memperoleh distribusi data dan gambaran terkait dataset yang kita gunakan.
+In addition, we also created a business dashboard using Tableau to provide insight from the data being analysed, and is useful for monitoring features/factors that affect the high attrition rate.
 
-Selain itu kita juga membuat business dashboard menggunakan Tableau untuk memberikan insight dari data yang sedang dianalisis, dan berguna untuk memonitori feature/faktor yang mempengaruhi tingginya tingkat attrition.
+We also created a web app on streamlit that can be used to predict attrition from inputted employee data.
 
-Kita juga membuat web app pada streamlit yang dapat digunakan untuk memprediksi attrition dari data karyawan yang diinput.
+### Preparation
 
-### Persiapan
-
-Sumber data: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
+Data source: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
-1. Buka file [notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/blob/main/notebook.ipynb) pada Google Colaboratory
-2. Jalankan kode berikut
+1. Open the file [notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/blob/main/notebook.ipynb) pada Google Colaboratory
+2. Running this code
    ```
    !pip install -r requirements.txt
    ```
@@ -32,40 +31,40 @@ Setup environment:
 ```
 streamlit run app.py
 ```
-Link Streamlit App Prediction: [attrition-predictor](https://attrition-predictor.streamlit.app/)
+Streamlit prediction app link: [attrition-predictor](https://attrition-predictor.streamlit.app/)
 
 ## Business Dashboard
 ![muhamadsyarif-dashboard](https://github.com/user-attachments/assets/5bd2970b-e67c-463f-a77d-f4ab5865be53)
 ![muhamadsyarif-dashboard2](https://github.com/user-attachments/assets/ac206197-4f78-4419-9b0b-b8f7c80bf769)
 
-Berdasarkan dashboard yang telah dibuat, berikut ini adalah beberapa insight yang diperoleh:
-- Karyawan yang berumur 18-26 tahun memiliki presentase tingkat attrition yang lebih tinggi.
-- gender tidak memiliki pengaruh terhadap attrition.
-- Karyawan yang belum menikah memiliki tingkat attrition yang lebih tinggi dibandingkan dengan kategori lain pada status perkawinan.
-- Karyawan dengan latar belakang pendidikan dibidang Technical Degree memiliki tingkat attrition tertinggi dibanding bidang lain, namun perbedaan tingkat attrition antar bidang tidak terlalu signifikan.
-- Karyawan dengan pendapatan perbulan antara 1k-4k lebih memungkinkan untuk resign.
-- Karyawan dengan jumlah tahun kerja kurang dari 3 tahun memiliki persentase resign lebih tinggi. *(Pada grafik ini karyawan dengan total working years 40 tahun kita abaikan karena sudah berumur kurang lebih 60 tahun, yang mana merupakan rata-rata orang berhenti bekerja)*
-- Karyawan yang bekerja melebihi waktu kerja/lembur lebih mungkin untuk resign.
-- Karyawan dengan tingkat level pekerjaan yang paling rendah lebih cenderung untuk resign.
-- Posisi/peran pekerjaan yang memiliki tingkat presentase resign tertinggi adalah Sales Representative, perbedaannya cukup signifikan jika dibandingkan dengan peran lain.
+Based on the dashboard that has been created, the following are some of the insights obtained:
+- Employees aged 18-26 years old have a higher percentage of attrition rates.
+- Gender has no affect on attrition.
+- Single employees have a higher attrition rate compared to other categories of marital status.
+- Employees with an educational background in the Technical Degree field have the highest attrition rate compared to other fields, but the difference in attrition rates between fields is not very significant.
+- Employees with monthly income between 1k-4k are more likely to resign.
+- Employees having worked less than 3 years are more likely to quit. *(In this chart, we ignore employees with total working years of 40 years because they are approximately 60 years old, which is the average age for people to quit their job).*
+- Employees who work overtime are more likely to resign.
+- Employees with the lowest job level are more likely to resign.
+- The job role that has the highest percentage rate of resignation is Sales Representative, the difference is quite significant when compared to other roles.
 
-Link dashboard yang dapat diakses: [Tableau Dashboard](https://public.tableau.com/views/HRAttritionDashboard_17148452730550/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
+Accessible dashboard link: [Tableau Dashboard](https://public.tableau.com/views/HRAttritionDashboard_17148452730550/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
 
 ## Conclusion
 
-Berdasarkan analisis korelasi heatmap, visualisasi, dan machine learning feature yang paling berpengaruh secara signifikan baik secara positif maupun negatif terhadap attrition karyawan adalah Age, Monthly Income, OverTime, dan Total Working Years.
+Based on heatmap correlation analysis, visualisation, and machine learning, the features that have the most significant positive and negative correlation with employee attrition are Age, Monthly Income, Over Time, and Total Working Years.
 
-Karyawan yang mengalami Over Time, karyawan yang berumur muda(18-26 tahun), yang memiliki pendapatan perbulan cenderung rendah(1k-4k), dan total tahun kerja yang relatif rendah(kurang dari 3 tahunn) merupakan karakteristik karyawan yang lebih berpotensi untuk keluar dari pekerjaannya.
+Employees who work overtime, employees who are young (18-26 years old), who have monthly income tends to be low (1k-4k), and who have a relatively low total working years (less than 3 years) are characteristics of employees who are more likely to leave their jobs.
 
-Selain itu karakteristik tambahan yang juga dapat mempengaruhi kemungkinan karyawan untuk resign antara lain: karyawan yang belum menikah, karyawan dengan peran/posisi sebagai Sales Representative, dan karyawan yang memiliki level pekerjaan yang rendah.
+Additional characteristics that can also affect the likelihood of employees to resign include: unmarried employees, employees with Sales Representative roles, and employees with low job levels.
 
-### Recomendation Action Items
+### Recommended Action Items
 
-Beberapa rekomendasi aksi yang dapat dilakukan untuk memperbaiki tingkat attrition karyawan saat ini antara lain:  
-- Perusahaan mungkin dapat memberikan jalan karir yang jelas kepada karyawan muda agar mereka merasa terdorong untuk tetap bertahan di perusahaan. Ini bisa meliputi program pengembangan, pelatihan, atau mentorship yang ditujukan khusus untuk mereka.
-- Perusahaan dapat memantau dan mengatur jam kerja karyawan secara bijak agar tidak terjadi beban kerja yang berlebihan dan berpotensi menimbulkan atrisi.
-- Tinjau kembali kebijakan kompensasi perusahaan untuk memastikan bahwa gaji yang ditawarkan kompetitif dan sesuai dengan kontribusi yang karyawan berikan.
-- Tinjau kembali proses onboarding perusahaan untuk memastikan bahwa karyawan baru mendapatkan dukungan dan pembekalan yang cukup untuk berhasil dalam peran mereka.
-- Perusahaan mungkin dapat mempertimbangkan program dukungan atau kasejahteraan karyawan seperti dukungan sosial, program mentoring, atau kegiatan sosial untuk memperkuat ikatan antarkaryawan.
-- Perusahaan dapat mengidentifikasi posisi Sales Representative, kemudian kembangkan strategi retensi khusus untuk mempertahankan karyawan yang mengisi peran tersebut.
-- Lakukan analisis untuk memahami kebutuhan dan harapan karyawan dengan tingkat level pekerjaan yang paling rendah.
+Some recommended actions that can be done to improve the current employee attrition rate include:  
+- The company may be able to provide a clear career path to young employees so that they feel encouraged to stay with the company. This may include development, training, or mentorship programmes specifically for them.
+- The company can monitor and manage employees' working hours wisely to avoid work overload and potential attrition.
+- Review the company's compensation policy to ensure that the salaries offered are competitive and in line with the contributions that employees make.
+- Review the company's onboarding process to ensure that new employees are given the support and resources they need to succeed in their roles.
+- Companies can consider employee support or wellbeing programmes such as social support, mentoring programmes, or social activities to help build loyalty.
+- Companies can identify Sales Representative positions and then develop specific retention strategies to retain employees who occupy these roles.
+- Conduct an analysis to understand the needs and expectations of employees at the lowest levels of the job.
