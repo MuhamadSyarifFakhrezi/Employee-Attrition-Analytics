@@ -52,7 +52,7 @@ Accessible dashboard link: [Tableau Dashboard](https://public.tableau.com/views/
 
 ## Conclusion
 
-Based on heatmap correlation analysis, visualisation, and machine learning, the features that have the most significant positive and negative correlation with employee attrition are Age, Monthly Income, Over Time, and Total Working Years.
+Based on heatmap correlation analysis, visualization, and machine learning, the features that have the most significant positive and negative correlation with employee attrition are Age, Monthly Income, Over Time, and Total Working Years.
 
 Employees who work overtime, employees who are young (18-26 years old), who have monthly income tends to be low (1k-4k), and who have a relatively low total working years (less than 3 years) are characteristics of employees who are more likely to leave their jobs.
 
