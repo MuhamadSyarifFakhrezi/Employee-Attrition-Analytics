@@ -20,7 +20,7 @@ We also created a web app on streamlit that can be used to predict attrition fro
 Data source: [data.csv](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
-1. Open the file [notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/blob/main/notebook.ipynb) pada Google Colaboratory
+1. Open this file '[notebook.ipynb](https://github.com/MuhamadSyarifFakhrezi/Employee-Attrition-Analytics/blob/main/notebook.ipynb)' in Google Colaboratory
 2. Running this code
    ```
    !pip install -r requirements.txt
